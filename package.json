@@ -1,7 +1,12 @@
 {
+  "description": "A personal expense monitoring app",
   "name": "montory",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "Risko Ruus",
+    "url": "https://montory.io"
+  },
   "dependencies": {
     "@capacitor/core": "3.0.1",
     "@ionic/react": "^5.5.0",
@@ -40,7 +45,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -61,7 +67,11 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.0.1"
+    "@capacitor/cli": "3.0.1",
+    "@ionic/prettier-config": "^1.0.1",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.1",
+    "pretty-quick": "^3.1.1"
   },
-  "description": "An Ionic project"
+  "prettier": "@ionic/prettier-config"
 }
